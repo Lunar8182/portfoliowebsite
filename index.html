@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="#home" class="logo">Chase Kowalsky</a>
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- ===== HOME SECTION ===== -->
+<section id="home" class="home">
+    <div class="home-content">
+        <h1>Hi there! My name is <span>Chase Kowalsky</span></h1>
+        <h3>I have interests in: <span id="typing-text"></span></h3>      
+        <p id="welcome-text">
+            My goal is to create a positive image of myself and show my software production capabilities!
+            I am excited to connect and land my first internship in the software development field! 
+            Feel free to reach out and contact me at the links below!
+        </p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/chasekowalsky/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Lunar8182" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="mailto:chase.kowalsky78@gmail.com" class="btn">Contact Me!</a>
+        <a href="resume.pdf" class="btn">Download My Resume Here!</a>
+    </div>
+    <div class="home-img">
+        <img src="main.jpg" alt="Chase Photo">
+    </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="about">
+    <h2 id="abouthead">About Me</h2>
+    <p class="about-text">
+        Hello! I’m Chase, a software developer passionate about building web apps and learning new technologies. <br>
+        I enjoy solving new problems and learning programming languages. I currently attend Eastern Michigan University, 
+        pursuing a degree in Computer Science. <br>
+        My future plans include earning a Master's in Data Science and working with innovative tech teams.
+    </p>
+    <div class="about-img">
+        <img src="me.jpg" alt="About Me">
+    </div>
+</section>
+
+<!-- ===== PROJECTS SECTION ===== -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card fade-in">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio site showcasing my projects and skills. Built with HTML, CSS, and JavaScript.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card fade-in">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Weather App</h3>
+            <p>Fetches real-time weather data using APIs and displays dynamic backgrounds based on conditions.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card fade-in">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>Task Tracker</h3>
+            <p>A full-stack task manager app using Node.js, Express, and MongoDB for personal productivity.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SKILLS SECTION ===== -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-bar fade-in">
+            <span>HTML</span>
+            <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+        </div>
+        <div class="skill-bar fade-in">
+            <span>CSS</span>
+            <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+        </div>
+        <div class="skill-bar fade-in">
+            <span>JavaScript</span>
+            <div class="progress-bar"><div class="progress" data-width="60%"></div></div>
+        </div>
+        <div class="skill-bar fade-in">
+            <span>Python</span>
+            <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+        </div>
+        <div class="skill-bar fade-in">
+            <span>Java</span>
+            <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+             <div class="skill-bar fade-in">
+            <span>GitHub</span>
+            <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+             <div class="skill-bar fade-in">
+            <span>AWS</span>
+            <div class="progress-bar"><div class="progress" data-width="40%"></div></div>
+            <p id="skills-text"> I have completed course work in all of the above things but I know some of them better than others.
+                I am continuing to learn more about them and my goals are to fully know Python and get a certificate in it.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="edu-card fade-in">
+        <img src="emu.jpg" alt="EMU">
+        <h3>Eastern Michigan University</h3>
+        <p>Bachelor of Science in Computer Science (Expected April 2027)</p>
+        <p>Minor in Computer Engineering Technology</p>
+        <p>Relevant Courses: Data Structures, Algorithms, Web Development, Computer Game Programming, Databases For Engineers</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Want to connect? Drop me a message!</p>
+    <form action="https://formspree.io/f/mblpngvq" method="POST" class="contact-form fade-in">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+</form>
+
+</section>
+
+<script>
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+// Typing Text Effect
+const words = [
+    "Web Development",
+    "Full-Stack Development",
+    "Artificial Intelligence",
+    "Data Science",
+    "Software Engineering"
+];
+let i = 0;
+const typingSpan = document.getElementById("typing-text");
+function rotateWords() {
+    typingSpan.textContent = words[i];
+    i = (i + 1) % words.length;
+}
+rotateWords(); 
+setInterval(rotateWords, 3000);
+
+// Fade-in on scroll
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = { threshold: 0.2 };
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+    });
+}, appearOptions);
+faders.forEach(fader => appearOnScroll.observe(fader));
+
+// Skill Progress Animation
+const progressBars = document.querySelectorAll('.progress');
+window.addEventListener('scroll', () => {
+    progressBars.forEach(bar => {
+        const rect = bar.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            bar.style.width = bar.getAttribute('data-width');
+        }
+    });
+});
+
+// Contact Form Feedback
+document.querySelector('.contact-form').addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Thanks for reaching out! I’ll get back to you soon.');
+    e.target.reset();
+});
+</script>
+
+</body>
+</html>
