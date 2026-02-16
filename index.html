@@ -24,23 +24,22 @@
 <!-- ===== HOME SECTION ===== -->
 <section id="home" class="home">
     <div class="home-content">
-        <h1>Hi there! My name is <span>Chase Kowalsky</span></h1>
+        <h1>Hello! My name is <span>Chase Kowalsky</span></h1>
         <h3>I have interests in: <span id="typing-text"></span></h3>      
         <p id="welcome-text">
-            My goal is to create a positive image of myself and show my software production capabilities!
-            I am excited to connect and land my first internship in the software development field! 
-            Feel free to reach out and contact me at the links below!
+            Hello and welcome to my page! My name is Chase Kowalsky and I am very passionate about making video games, Python, and front-end development!<br>
+            I am currently working on projects and working as a Teacher's Assistant at Eastern Michigan University to gain more experience<br>
+            in the field of Computer Science! I love what I do and I am looking to land my first internship as a software or data engineer!
         </p>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/chasekowalsky/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/Lunar8182" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:chase.kowalsky78@gmail.com" target="_blank"><i class="fa-brands fa-envelope"></i></a>
         </div>
-        <a href="mailto:chase.kowalsky78@gmail.com" class="btn">Contact Me!</a>
-        <a href="resume.pdf" class="btn">Download My Resume Here!</a>
+        <a href="resume.pdf" class="btn">Check Out My Resume Here!</a>
     </div>
     <div class="home-img">
-        <img src="main.jpg" alt="Chase Photo">
+        <img src="me2.jpg" alt="Chase Photo">
     </div>
 </section>
 
@@ -48,10 +47,11 @@
 <section id="about" class="about">
     <h2 id="abouthead">About Me</h2>
     <p class="about-text">
-        Hello! I’m Chase, a software developer passionate about building web apps and learning new technologies. <br>
+        Hello! I’m Chase, a software developer passionate about building web apps and video games! <br>
         I enjoy solving new problems and learning programming languages. I currently attend Eastern Michigan University, 
-        pursuing a degree in Computer Science. <br>
-        My future plans include earning a Master's in Data Science and working with innovative tech teams.
+        pursuing a degree in Computer Science with a minor in Computer Engineering. <br> 
+        I largely enjoy working in teams and working on big projects that take time and show my skills.<br>
+        My future plans include earning a Masters Degree in Data Science and working with innovative tech teams.
     </p>
     <div class="about-img">
         <img src="me.jpg" alt="About Me">
@@ -71,14 +71,14 @@
         <div class="project-card fade-in">
             <img src="project2.png" alt="Project 2">
             <h3>Weather App</h3>
-            <p>Fetches real-time weather data using APIs and displays dynamic backgrounds based on conditions.</p>
+            <p>Fetches real-time weather data using APIs and displays dynamic backgrounds based on weather conditions.</p>
             <a href="https://github.com/Lunar8182/weatherapp" class="btn">View Project</a>
         </div>
         <div class="project-card fade-in">
-            <img src="project3.jpg" alt="Project 3">
-            <h3>Flash-Games</h3>
-            <p>A game searching website that allows the user to search for any video game. Uses RAWG API and built with react and vite.</p>
-            <a href="#" class="btn">View Project</a>
+            <img src="todo.png" alt="Project 3">
+            <h3>Todo-App</h3>
+            <p>A task manager/todo app to help anyone who wants to become more organized! This can be downloaded as a shortcut to the homescreen of your smartphone!.</p>
+            <a href="https://lunar8182.github.io/todo-list-app-personal-/" class="btn">View Project</a>
         </div>
     </div>
 </section>
@@ -108,12 +108,13 @@
             <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
              <div class="skill-bar fade-in">
             <span>GitHub</span>
-            <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+            <div class="progress-bar"><div class="progress" data-width="100%"></div></div>
              <div class="skill-bar fade-in">
             <span>AWS</span>
             <div class="progress-bar"><div class="progress" data-width="40%"></div></div>
-            <p id="skills-text"> I have completed course work in all of the above things but I know some of them better than others.
-                I am continuing to learn more about them and my goals are to fully know Python and get a certificate in it.
+            <span>SQL</span>
+            <div class = "progress-bar"><div class = "progress" data-width="60%"></div></div>
+            <p id="skills-text">
             </p>
         </div>
     </div>
@@ -133,7 +134,7 @@
 <section id="contact">
     <h2>Contact Me</h2>
     <p>Want to connect? Drop me a message!</p>
-    <form action="https://formspree.io/f/mblpngvq" method="POST" class="contact-form fade-in">
+    <form action="https://formspree.io/f/mblpngvq" method="post" class="contact-form fade-in">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="_replyto" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -154,7 +155,7 @@ navLinks.forEach(link => {
 // Typing Text Effect
 const words = [
     "Web Development",
-    "Full-Stack Development",
+    "Video Game Development",
     "Artificial Intelligence",
     "Data Science",
     "Software Engineering"
