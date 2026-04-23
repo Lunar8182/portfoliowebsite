@@ -302,7 +302,40 @@ section {
     margin-bottom: 2.5rem;
 }
 
-/* ===== SKILLS ===== */
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.exp-card {
+    padding: 3rem;
+    text-align: left;
+}
+
+.exp-card h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.exp-company {
+    font-size: 1.6rem;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.exp-date {
+    font-size: 1.4rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.exp-desc {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
 .skills-container {
     max-width: 800px;
     margin: 4rem auto 0;
